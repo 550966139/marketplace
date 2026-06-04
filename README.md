@@ -15,7 +15,8 @@
 | `/rnd:review` | 评审当前改动 + 重构/简化(委派内置 `/code-review`、`/simplify`) |
 | `/rnd:test [目标]` | 按 profile 跑测试、复现 bug、验证改动真生效 |
 | `/rnd:ship` | 规范 commit / 开 PR / changelog / 发布 |
-| `/rnd` | 入口/路由(不确定用哪个时打它) |
+| `/rnd:prefs` | 生成/编辑你的全局编码偏好(`~/.claude/CLAUDE.md`,内容私有留本机) |
+| `/rnd:help` | 入口/帮助/路由(不确定用哪个时打它) |
 
 背后是一组通用、多语言的子代理:`rnd:explorer`、`rnd:reviewer`、`rnd:refactorer`、`rnd:test-runner`、`rnd:debugger`、`rnd:shipper`。
 
@@ -68,7 +69,7 @@ rnd-toolkit/
 ├── .claude-plugin/marketplace.json     # marketplace 清单(列出插件)
 └── plugins/rnd/
     ├── .claude-plugin/plugin.json      # 插件清单(name=rnd,不写 version)
-    ├── skills/{rnd,init,explore,review,test,ship}/SKILL.md
+    ├── skills/{help,init,explore,review,test,ship,prefs}/SKILL.md
     ├── agents/{explorer,reviewer,refactorer,test-runner,debugger,shipper}.md
     └── scripts/detect-stack.sh         # 多语言探栈(被 /rnd:init 调用)
 ```

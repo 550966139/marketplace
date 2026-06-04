@@ -19,6 +19,7 @@ description: R&D 工具箱入口/帮助/路由。当用户输入 /rnd:help、问
 | `/rnd:review` | 评审当前改动 + 重构/简化(委派内置 /code-review、/simplify) |
 | `/rnd:test [目标]` | 按 profile 跑测试、复现 bug、verify 改动真生效 |
 | `/rnd:ship` | 规范 commit / 开 PR / changelog / 发布 |
+| `/rnd:prefs` | 生成/编辑你的全局编码偏好(`~/.claude/CLAUDE.md`) |
 
 ## 复用优先(重要)
 Claude Code 已内置 `/code-review`、`/simplify`、`/verify`、`/run`、`/security-review`。本工具箱**编排并委派**它们,只补「项目 profile 适配 + 多语言命令 + 统一入口 + 专用子代理」,**不重写**已有能力。

@@ -4,6 +4,11 @@
 
 ## Unreleased
 
+### Changed
+- 路由技能 `rnd` 改名 `help`(`/rnd:rnd` → `/rnd:help`,去掉绕口的双 rnd)。
+- `plugin.json` 删除非法的 `skills`/`agents` 字段,组件改为标准自动发现(修安装时 `agents: Invalid input`)。
+- 新增 `/rnd:prefs`:脚手架生成本机 `~/.claude/CLAUDE.md` 全局编码偏好模板(前端/后端/通用),内容私有、不进仓;覆盖"主循环直接写代码"路径。
+
 ### Added — 初版骨架(v0)
 - marketplace `rnd-toolkit` + 插件 `rnd`。
 - 技能:`/rnd`(路由)、`/rnd:init`(探栈生成 `.claude/rnd-profile.json`)、`/rnd:explore`、`/rnd:review`、`/rnd:test`、`/rnd:ship`。
